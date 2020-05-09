@@ -1,0 +1,280 @@
+body
+{
+    
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+    font-family:'Times New Roman', Times, serif;
+    height:100%;
+   background-color: #333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.compare
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../images/black-background.jpg);
+}
+.btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #8e8e8e;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.btn-primary:hover
+{
+    color:#255784;
+    background: #2196f3;
+    box-shadow:0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.8s;
+    transition-duration: 0.6s;
+}
+.btn-primary b
+{
+    color:black;
+    visibility: hidden;
+}
+
+
+.comparison
+{
+    color: white;
+   
+
+}
+.comparison-img
+{
+    margin-top: 22px;
+   
+}
+.comparison-img img
+{
+  
+   border:3px solid white;
+}
+.comparison-img h1  
+{
+    margin-top:3em;
+    color:white;
+    text-transform: uppercase;
+    font-size:50px ;
+    
+}
+.column
+{
+    justify-content: center;
+    display: flex;
+
+    float:left;
+   width:33.33%;
+    padding:5px;
+}
+
+.row::after
+{
+    content:"";
+    clear:both;
+    display:table;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .column
+{
+    justify-content: center;
+    display: flex;
+    float:left;
+    width:50%;
+    padding:5px;
+}
+#vs
+{
+    display:none;
+}
+.vs-small
+{
+    visibility: visible;
+    color:white;
+    margin-top: -5px;
+}
+}
+
+@media only screen and (min-width: 600px)
+{
+    .vs-small
+    {
+        visibility: hidden;
+        color:white;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+   
+    padding: 10px;
+  }
+  
+  .grid-item {
+    
+    text-align: center;
+   
+  }
+  
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .item2
+  {
+    grid-column: 3;
+    grid-row:1;
+  }
+
+  .item3{
+    grid-column: 5;
+    grid-row: 1;
+  }
+.next-prev
+{
+  color:white;
+  background-color: rgb(148, 0, 0);
+  border-radius:2px;
+  border: hidden;
+  margin-bottom: 5em;
+}
+
+.next-prev:hover
+{
+    background-color: rgb(105, 0, 0);
+}
+.v1 {
+    border-left: 4px solid #500000;
+    height: 500px;
+    transform: translateX(50%);
+  }
+  hr.new5 {
+    border: 2px solid rgb(3, 51, 133);
+    border-radius: 5px;
+    margin-top: -5px;
+  }
+
+  .about-them img
+  {
+    
+  height:8em;
+  width:auto;
+  border-radius: 50%;
+  
+
+  
+
+  
+  }
+  .about-them p
+  {
+      color: rgb(211, 211, 211);
+      font-size: large;
+     font-size: 20px;
+      
+  }
+  .container .card
+{
+    position: relative;
+}
+
+.container .card .face
+{
+    width:369px;
+    height:200px;
+    transition:0.5s;
+}
+.container .card .face.face1
+{
+    position: relative;
+    background: #333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+    transform:translateY(100px);
+
+}
+.container .card:hover .face.face1
+{
+    transform:translateY(0);
+    background: #ff0057;
+}
+.container .card .face.face1 .content
+{
+    opacity:0.2;
+    transition: 0.5s;
+}
+.container .card:hover .face.face1 .content
+{
+    opacity:1;
+}
+.container .card .face.face1 .content img
+{
+    max-width: 100px;
+}
+.container .card .face.face1 .content h3
+{
+    margin: 10px 0 0;
+    padding: 0;
+    color:#fff;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+.container .card .face.face2
+{
+    position: relative;
+    background: #fff;
+ 
+    display:flex;
+     justify-content: center;
+     align-items: center;
+     padding:20px;
+     box-sizing: border-box;
+     box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+     transform: translateY(-100px);
+
+}
+.container .card:hover .face.face2
+{
+    transform: translateY(0);
+}
+.container .card .face.face2 .content p
+{
+    margin:0;
+    padding:0;
+
+}
+.container .card .face.face2 .content a
+{
+    margin:15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color:#333;
+    padding: 5px;
+    border:1px solid #333;
+}
+.container .card .face.face2 .content a:hover
+{
+    background: #333;
+    color:#fff;
+}
+.card2nd
+{
+float:right;
+}

@@ -1,0 +1,349 @@
+body
+{
+    
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    font-family:'Times New Roman', Times, serif;
+    height:100%;
+    scroll-behavior: smooth;
+}
+header
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(../images/header.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    
+  }
+  
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border:1px solid black ;
+  box-sizing: border-box;
+  background-color: black;
+  box-shadow:0 0 0px #2196f3, 0 0 0px #2196f3, 0 0 6px #2196f3;
+}
+.login-button
+{
+  background-color: rgb(42, 109, 253);
+  border:rgb(42, 109, 253);
+  border-radius: 5px;
+  padding:11px;
+}
+
+
+.login-button-ok
+{
+  background-color: #000000;
+  box-shadow:0 0 0px #2196f3, 0 0 0px #2196f3, 0 0 6px #2196f3;
+  color:black;
+  border-radius:50%;
+  height:3em;
+  width:3em;
+  padding:5px;
+  border:1px;
+  
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color:black;
+  /* box-shadow:0 0 0px #2196f3, 0 0 0px #2196f3, 0 0 8px #2196f3; */
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  color:white;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(0, 0, 92);
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+  
+  .home 
+  {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+ 
+.home h1
+{
+    color:white;
+  display:flex;
+  font-size:40px;
+  text-transform: uppercase;
+  justify-content: center;
+  word-spacing: 10px;
+ 
+   letter-spacing: 2px;
+  text-align: center;
+ }
+.home h2
+{
+    color:white;
+    margin-top: -10px;
+    font-size: 20px;
+}
+.home a
+{
+    text-decoration: none;
+    
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border:1px solid #588dff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.btn-primary:hover
+{
+    color:#255784;
+    background: #2196f3;
+    box-shadow:0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.8s;
+    transition-duration: 0.6s;
+}
+.btn-primary b
+{
+    color:black;
+    visibility: hidden;
+}
+
+.navbar-inverse {
+    background-color: #3e0000;
+    border-color: #080808;
+}
+.navbar {
+    position: relative;
+    min-height: 55px;
+    margin-bottom: -55px;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #8c8c8c;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color:#255784;
+    background: #2196f3;
+    box-shadow:0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.5s;
+  transition-duration: 0.9s;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    background-color:#09090552;
+}
+
+
+@media only screen and (max-width: 600px){
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+    background-color: #000000;
+  }
+
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+ 
+  padding: 10px;
+}
+
+.grid-item {
+  
+  text-align: center;
+ 
+}
+
+.item1 {
+  grid-column: 1/span 5;
+  grid-row: 1;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+
+.item5
+{
+  
+
+  grid-column:1;
+  grid-row: 2;
+  text-align: center;
+}
+.item6
+{
+  
+
+  grid-column:2;
+  grid-row: 2;
+  text-align: center;
+}
+.item7
+{
+  
+
+  grid-column:3;
+  grid-row: 2;
+  text-align: center;
+}
+.item8
+{
+  
+
+  grid-column:4;
+  grid-row: 2;
+  text-align: center;
+}
+.item9
+{
+  
+
+  grid-column:5;
+  grid-row: 2;
+  text-align: center;
+}
+.item10
+{
+  
+
+  grid-column:6;
+  grid-row: 2;
+  text-align: center;
+}
+
+
+.item3{
+  grid-column: 1/span 3;
+  
+
+}
+
+
+.item4{
+  grid-column: 2;
+  grid-row: 2;
+  padding:3em;
+  
+}
+
+.home img
+{
+
+  height:6em;
+  width:auto;
+  border-radius: 50%;
+ 
+  box-shadow: 0 0 19px #000000, 0px 0px 28px #000000, 0 0 30px #000000;
+ 
+
+  
+}
+@media only screen and (max-width: 600px){
+ 
+  
+.home img
+{
+
+  height:4em;
+  width:auto;
+  border-radius: 50%;
+  float: left;
+
+  box-shadow: 0 0 19px #000000, 0px 0px 28px #000000, 0 0 30px #000000;
+
+  
+}
+}
+
+
+
+
+
+
