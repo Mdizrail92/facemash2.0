@@ -46,6 +46,7 @@ input[type=text], input[type=password] {
   color:black;
   border-radius:50%;
   height:3em;
+  margin-top:10px ;
   width:3em;
   padding:5px;
   border:1px;
@@ -87,6 +88,7 @@ span.psw {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   padding-top: 60px;
+  
 }
 
 /* Modal Content/Box */
@@ -97,6 +99,7 @@ span.psw {
   border: 1px solid #888;
   color:white;
   width: 50%; /* Could be more or less, depending on screen size */
+
 }
 @media screen and (max-width: 600px) {
   .modal-content {
@@ -190,8 +193,8 @@ span.psw {
     color:#255784;
     background: #2196f3;
     box-shadow:0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 0.8s;
-    transition-duration: 0.6s;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
 }
 .btn-primary b
 {
@@ -217,8 +220,8 @@ span.psw {
     color:#255784;
     background: #2196f3;
     box-shadow:0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 0.5s;
-  transition-duration: 0.9s;
+    transition-delay: 0.2s;
+  transition-duration: 0.3s;
 }
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-right: -15px;
@@ -348,6 +351,9 @@ span.psw {
   
 }
 }
+
+
+
 
 
 

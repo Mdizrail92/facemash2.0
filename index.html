@@ -26,14 +26,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#"><span><img src="images/boy.png" height="30px"></span>CrushMash</a>
+      <a class="navbar-brand" style="margin-left: 10px;" href="#"><span><img src="images/boy.png" height="30px"></span>Facemash2.0</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Main</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
+        <!-- <li><a href="#">Home</a></li>
+        <li><a href="#">How to Play</a></li> 
+        <li><a  onclick="document.getElementById('id01').style.display='block'">Start</a></li>
+        <li><a href="#">Page 3</a></li> -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -52,14 +52,14 @@
       <h1>Everyone has their own beauty</h1>
       <h2>And we are  going to compare them</h2>
    <div class="grid-container">
-    <div class="grid-item item1">   <button type = "button" class = "btn btn-primary"><a href="index1.html">start comparing</a></button></div>
+    <div class="grid-item item1">   <button type = "button" class = "btn btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">start comparing</button></div>
   
       
         <div class="grid-item item5">     <img src="images/robertdowney.jpg" alt="">  </div>
+        <div class="grid-item item7">  <img src="images/gal-gadotas (1).jpg" alt=""></div>
           <div class="grid-item item6">   <img src="images/Henrycavill.jpg" alt=""></div>
-            <div class="grid-item item7">  <img src="images/markruffalo.jpg" alt=""></div>
               <div class="grid-item item8">  <img src="images/chris-evans.jpg" alt=""></div>
-                <div class="grid-item item9">   <img src="images/chrishemsworth.jpg" alt="">
+                <div class="grid-item item9">   <img src="images/brie larson (1).jpg" alt="">
       </div>
     
       </div>
@@ -78,7 +78,7 @@
     
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form id="visiters" class="modal-content animate">
     <div class="grid-container">
       <div class="grid-item item3">
     <div class="imgcontainer">
@@ -87,30 +87,38 @@
     </div>
       </div>
       <div class="grid-item item4">
-      <label for="uname"><span class="glyphicon glyphicon-user"></span> Username</label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="name"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+      </svg></span> Your Name</label>
+      <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
 
-      <label for="psw"><span class="glyphicon glyphicon-wrench"></span> Password</label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="instaID"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </svg></span> Instagram ID</label>
+      <input type="text" placeholder="Enter Your Instagram ID" name="inta-id" id="insta-id" required>
       <div class="col-sm-4">
-      Don't have a Gmail account?<a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">Sign Up</a>
+      <!-- Don't have a Gmail account?<a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">Sign Up</a> -->
    </div>
    <div class="col-sm-4">
       <button class="login-button-ok" type="submit"><span><img src="images/gps.png" height="25px" title="login" alt="Login"></span></button>
       </div>
       <div class="col-sm-4">
-     <a href="https://accounts.google.com/signin/v2/usernamerecovery?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue&csig=AF-SEnbuzOrFBQ0Nde_m%3A1579977852&flowName=GlifWebSignIn&flowEntry=AddSession&cid=1&TL=APDPHBC2MRpl-R5q7j6Mu5WVTPXBuWVlJ8aCdDfzDHA3Z3kp4CY2XxFFDdoMgGqJ">Forgot your email or password?</a>
-          
+     <!-- <a href="https://accounts.google.com/signin/v2/usernamerecovery?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue&csig=AF-SEnbuzOrFBQ0Nde_m%3A1579977852&flowName=GlifWebSignIn&flowEntry=AddSession&cid=1&TL=APDPHBC2MRpl-R5q7j6Mu5WVTPXBuWVlJ8aCdDfzDHA3Z3kp4CY2XxFFDdoMgGqJ">Forgot your email or password?</a>
+           -->
         </div>
       </div>
-  
-  </div>
-  </form>
+    </form>
 </div>
 
-    <script src="plugins/jquery-3.4.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
+<script src="plugins/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
